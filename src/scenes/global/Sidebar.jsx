@@ -60,9 +60,14 @@ const Sidebar = () => {
         },
       }}
     >
-      <ProSidebar>
-        <Menu>
-          <MenuItem>
+      <ProSidebar collapsed={isCollapsed}>
+        <Menu iconShape="square">
+          {/* Logo and Menu Icon */}
+          <MenuItem
+            onClick={() => setIsCollapsed(!isCollapsed)}
+            icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
+            style={{ margin: "10px 0 20px 0", color: colors.grey[100] }}
+          >
             {!isCollapsed && (
               <Box
                 display="flex"
@@ -101,7 +106,7 @@ const Sidebar = () => {
                   Jacqueline Mason
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  Lead Developer
+                  Web Developer
                 </Typography>
               </Box>
             </Box>
@@ -115,6 +120,13 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0 5px 20px" }}
+            >
+              Data
+            </Typography>
             <Item
               title="Manage Team"
               to="/team"
@@ -123,7 +135,7 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="Contacts Details"
+              title="Contacts Overview"
               to="/contacts"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
@@ -136,6 +148,13 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0 5px 20px" }}
+            >
+              Pages
+            </Typography>
             <Item
               title="Profile Form"
               to="/form"
@@ -157,6 +176,13 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0 5px 20px" }}
+            >
+              Charts
+            </Typography>
             <Item
               title="Bar Chart"
               to="/bar"
