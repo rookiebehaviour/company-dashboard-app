@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  fontWeight,
-  IconButton,
-  Typography,
-  useTheme,
-} from "@mui/material";
+import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
 import { mockTransactions } from "../../data/mockData";
