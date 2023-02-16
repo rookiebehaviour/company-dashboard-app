@@ -76,7 +76,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  MASON LLC
+                  MASON, LLC
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -103,7 +103,7 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Jacqueline Mason
+                  Jacqueline M
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   Web Developer
@@ -125,7 +125,7 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Data
+              DATA
             </Typography>
             <Item
               title="Manage Team"
@@ -153,7 +153,7 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Pages
+              PAGES
             </Typography>
             <Item
               title="Profile Form"
@@ -181,7 +181,7 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Charts
+              CHARTS
             </Typography>
             <Item
               title="Bar Chart"
