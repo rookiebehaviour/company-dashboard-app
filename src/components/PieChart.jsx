@@ -43,7 +43,7 @@ const PieChart = () => {
       padAngle={0.7}
       cornerRadius={3}
       activeOuterRadiusOffset={8}
-      colors={{ scheme: "purpleRed_green" }}
+      colors={{ scheme: "nivo" }}
       borderWidth={1}
       borderColor={{
         from: "color",
